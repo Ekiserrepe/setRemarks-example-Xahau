@@ -18,14 +18,13 @@ async function connectAndQuery() {
 
     const prepared = {
     "TransactionType": "SetRemarks",
-    "Flags": 0,
     "ObjectID": "yourObjectID",
           "Remarks": [
         {
           "Remark": {
             "RemarkName": Buffer.from("MyName1", 'utf8').toString('hex').toUpperCase(),
             "RemarkValue": Buffer.from("MyValue1", 'utf8').toString('hex').toUpperCase(),
-            "Flags": 0
+            "Flags": 0 //1 Inmutable, 0 Mutable
           }
         }
       ], ...networkInfo.txValues,
