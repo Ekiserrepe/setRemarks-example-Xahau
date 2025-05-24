@@ -1,0 +1,40 @@
+{
+  "name": "xahau-uritoken-mint",
+  "version": "1.0.0",
+  "description": "Script para crear URITokens y transacciones SetRemarks en Xahau Testnet",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "mint": "node mint-uritoken.js",
+    "remarks": "node set-remarks.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xahau",
+    "xrpl",
+    "uritoken",
+    "nft",
+    "blockchain",
+    "crypto"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@transia/xrpl": "^2.7.3-alpha.28",
+    "xrpl-accountlib": "^8.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
